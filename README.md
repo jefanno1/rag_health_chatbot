@@ -22,7 +22,6 @@ These files are ignored in `.gitignore`.
 
 1. Clone this repository
 
-bash
 git clone https://github.com/jefanno1/rag_health_chatbot.git
 cd rag_health_chatbot
 
