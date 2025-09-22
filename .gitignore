@@ -1,0 +1,21 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environment
+venv/
+
+# Data/Index yang besar
+pmc_articles/
+faiss_index.bin
+all_chunks.json
+corpus.json
+
+# Secrets / API keys
+.env
+HF_TOKEN
+
+# Hide sensitive scripts
+End_to_End_Health_Chatbot.py
+HF_OpenAI.py
+HuggingFace_Model_Prompt.py
