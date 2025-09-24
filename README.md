@@ -7,13 +7,13 @@ The system uses FAISS for vector search, SentenceTransformers for embeddings, an
 
   1. Data Preparation
 
-* Download PMC articles (XML format)
-
-* Extract and split text into chunks
-
-* Generate embeddings with SentenceTransformers
-
-* Store embeddings in FAISS index
+  * Download PMC articles (XML format)
+  
+  * Extract and split text into chunks
+  
+  * Generate embeddings with SentenceTransformers
+  
+  * Store embeddings in FAISS index
 
 2. Retrieval
 
