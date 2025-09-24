@@ -15,7 +15,7 @@ The system uses FAISS for vector search, SentenceTransformers for embeddings, an
 
 * Store embeddings in FAISS index
 
-  2. Retrieval
+2. Retrieval
 
 * User asks a question via the Streamlit app
 
