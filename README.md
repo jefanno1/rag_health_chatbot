@@ -5,7 +5,7 @@ The system uses FAISS for vector search, SentenceTransformers for embeddings, an
 
 # 🚀 System Flow
 
-1. Data Preparation**
+1. Data Preparation
 
 *Download PMC articles (XML format)
 
