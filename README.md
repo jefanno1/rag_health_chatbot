@@ -33,3 +33,12 @@ The system uses FAISS for vector search, SentenceTransformers for embeddings, an
 **4. Response**
 
 -> Answer displayed in Streamlit interface
+
+# 🛠 How to Operate
+
+**1. Clone The Repository**
+
+```
+git clone https://github.com/jefanno1/rag_health_chatbot.git
+cd rag_health_chatbot
+```
