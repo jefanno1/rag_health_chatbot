@@ -22,50 +22,32 @@ These files are ignored in `.gitignore`.
 
 ---
 
-## 🛠 Setup
+RAG Health Chatbot – System Flow
 
-1. Clone this repository
+1. Data Preparation
 
-git clone https://github.com/jefanno1/rag_health_chatbot.git
-cd rag_health_chatbot
+- Download PMC articles (XML format)
 
-2. Create and activate virtual environment
-# Using venv
-python -m venv venv
-.\venv\Scripts\activate      # Windows
-source venv/bin/activate     # Mac/Linux
+- Extract text and split into chunks (prepare_index.py)
 
-# Install dependencies
-pip install -r requirements.txt
+- Generate embeddings with SentenceTransformers
 
-3. Set your HuggingFace API key
-# On Windows
-set HF_TOKEN=your_huggingface_token
+- Store embeddings in FAISS index
 
-# On Mac/Linux
-export HF_TOKEN=your_huggingface_token
+2. Retrieval
 
-📂 Generate Data Files
-python prepare_index.py
+- User submits a query in Streamlit app (app.py)
 
-🖥 Run Chatbot
-streamlit run app.py
+- Retrieve top relevant chunks from FAISS
 
-📁 Folder Structure
-Chatbot_Health_Project/
-├─ pmc_articles/       # downloaded XML articles
-├─ venv/               # virtual environment (ignored)
-├─ __pycache__/        # Python cache (ignored)
-├─ all_chunks.json     # chunks of articles (ignored)
-├─ corpus.json         # full extracted corpus (ignored)
-├─ faiss_index.bin     # FAISS index (ignored)
-├─ app.py              # Streamlit interface
-├─ rag_api.py          # RAG pipeline
-├─ prepare_index.py    # script to generate corpus & FAISS index
-├─ .gitignore          # ignore file
+3. Generation
 
-⚡ Notes
+- Forward retrieved context + query to HuggingFace Qwen model (rag_api.py)
 
-Make sure to run prepare_index.py before running app.py so the index and chunks exist.
-The LLM requires HuggingFace Qwen access with your API key.
+- Model generates an answer
+
+4. Response
+
+- Display answer back in the Streamlit interface
+- The LLM requires HuggingFace Qwen access with your API key.
 
