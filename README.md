@@ -68,7 +68,7 @@ Run the indexing script (downloads articles, chunks them, and builds FAISS index
 ```
 python prepare_index.py
 ```
-**5. Start the chatbot app
+**5. Start the chatbot app**
 ```
 streamlit run app.py
 ```
