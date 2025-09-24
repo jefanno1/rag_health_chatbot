@@ -1,3 +1,6 @@
+
+![Untitled Diagram](https://github.com/user-attachments/assets/64838eac-ec83-4672-9703-051f689b858f)
+
 # 🩺 RAG Health Chatbot
 
 A Retrieval-Augmented Generation (RAG) chatbot that answers health-related queries using PMC (PubMed Central) articles.
