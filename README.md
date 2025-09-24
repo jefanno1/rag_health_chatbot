@@ -7,26 +7,26 @@ The system uses FAISS for vector search, SentenceTransformers for embeddings, an
 
 1. Data Preparation
 
-  * Download PMC articles (XML format)
+-> Download PMC articles (XML format)
   
-  * Extract and split text into chunks
+-> Extract and split text into chunks
   
-  * Generate embeddings with SentenceTransformers
+-> Generate embeddings with SentenceTransformers
   
-  * Store embeddings in FAISS index
+-> Store embeddings in FAISS index
 
 2. Retrieval
 
-* User asks a question via the Streamlit app
+-> User asks a question via the Streamlit app
 
-* FAISS retrieves top relevant chunks
+-> FAISS retrieves top relevant chunks
 
-  3. Generation
+3. Generation
 
-* Retrieved context + user query sent to HuggingFace Qwen model
+-> Retrieved context + user query sent to HuggingFace Qwen model
 
-* Model generates an answer
+-> Model generates an answer
 
-  4. Response
+ 4. Response
 
-* Answer displayed in Streamlit interface
+-> Answer displayed in Streamlit interface
