@@ -63,6 +63,7 @@ set HF_TOKEN=your_huggingface_token
 export HF_TOKEN=your_huggingface_token
 ```
 **4. Prepare the FAISS index and corpus**
+
 Run the indexing script (downloads articles, chunks them, and builds FAISS index):
 ```
 python prepare_index.py
