@@ -1,5 +1,9 @@
-# RAG Health Chatbot
 
+![Untitled Diagram](https://github.com/user-attachments/assets/a8f8c08b-5d55-45e2-9130-4f4869abddb7)
+
+---
+
+# RAG Health Chatbot
 This repository contains the code for a Retrieval-Augmented Generation (RAG) chatbot using PMC articles.  
 The chatbot uses FAISS for vector search and a SentenceTransformer for embeddings, with LLM inference via HuggingFace Qwen model.
 
