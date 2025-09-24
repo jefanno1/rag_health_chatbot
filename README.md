@@ -42,3 +42,33 @@ The system uses FAISS for vector search, SentenceTransformers for embeddings, an
 git clone https://github.com/jefanno1/rag_health_chatbot.git
 cd rag_health_chatbot
 ```
+**2. Create a virtual environment and install dependencies**
+```
+# Windows
+python -m venv venv
+.\venv\Scripts\activate
+
+# Mac/Linux
+python -m venv venv
+source venv/bin/activate
+
+pip install -r requirements.txt
+```
+**3. Set HuggingFace API key**
+```
+# Windows
+set HF_TOKEN=your_huggingface_token
+
+# Mac/Linux
+export HF_TOKEN=your_huggingface_token
+```
+**4. Prepare the FAISS index and corpus**
+Run the indexing script (downloads articles, chunks them, and builds FAISS index):
+```
+python prepare_index.py
+```
+**5. Start the chatbot app
+```
+streamlit run app.py
+```
+Then open the URL shown in your terminal (usually http://localhost:8501) to chat with the model.
