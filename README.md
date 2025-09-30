@@ -1,3 +1,4 @@
+<img width="761" height="231" alt="RAG_Health_Chatbot_Diagram" src="https://github.com/user-attachments/assets/3c513005-5e82-4064-853d-2887c2609876" />
 
 ![Untitled Diagram](https://github.com/user-attachments/assets/64838eac-ec83-4672-9703-051f689b858f)
 
