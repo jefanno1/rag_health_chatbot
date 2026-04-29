@@ -9,7 +9,7 @@ The system uses FAISS for vector search, SentenceTransformers for embeddings, an
 
 ## Result
 
-![Health Chatbot](.\health_chatbot.png)
+![Health Chatbot](./health_chatbot.png)
 
 # 🚀 System Flow
 
