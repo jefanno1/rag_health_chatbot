@@ -7,6 +7,10 @@
 A Retrieval-Augmented Generation (RAG) chatbot that answers health-related queries using PMC (PubMed Central) articles.
 The system uses FAISS for vector search, SentenceTransformers for embeddings, and a Qwen model from HuggingFace for response generation.
 
+## Result
+
+![Health Chatbot](.\health_chatbot.png)
+
 # 🚀 System Flow
 
 **1. Data Preparation**
